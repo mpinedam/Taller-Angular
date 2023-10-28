@@ -9,11 +9,13 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class SerieService {
-  private apiUrl = environment.baseUrl + 'series.json';
+  private apiUrl = environment.baseUrl;
 
   constructor(private http: HttpClient) { }
 
   getSeries(): Observable<Serie[]> {
     return this.http.get<Serie[]>(this.apiUrl);
   }
+
+
 }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mynewapp": {
+    "TallerAngular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mynewapp",
+            "outputPath": "dist/taller-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mynewapp:build:production"
+              "browserTarget": "TallerAngular:build:production"
             },
             "development": {
-              "browserTarget": "mynewapp:build:development"
+              "browserTarget": "TallerAngular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mynewapp:build"
+            "browserTarget": "TallerAngular:build"
           }
         },
         "test": {
@@ -97,6 +97,6 @@
     }
   },
   "cli": {
-    "analytics": "5026aa36-e5e3-4475-ab45-89305a0d6be9"
+    "analytics": "de993d73-60c9-4a72-a101-30f6ba775fbf"
   }
 }
